@@ -1,16 +1,25 @@
-## Hi there 👋
+# Leonardo Freitas
 
-<!--
-**Leoffreitass/Leoffreitass** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Pesquisador quantitativo independente, focado no mercado brasileiro: estratégias sistemáticas long-only sobre o IBOVESPA, do dado bruto ao backtest. Aberto a oportunidades em pesquisa quantitativa e gestão de risco.
 
-Here are some ideas to get you started:
+## Projetos
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🌊 [Serenus](https://github.com/Leoffreitass/serenus)
+
+**Low-vol → HRP → volatility targeting com GARCH(1,1) no universo do IBOVESPA.** Sete experimentos documentados até a estratégia final: o momentum clássico e seus crashes, HRP, GARCH como previsor, momentum residual e a combinação de sinais que *não* funcionou — antes do vencedor: comprar os 15 papéis menos voláteis do índice, alocar por Hierarchical Risk Parity e escalar a exposição pela vol prevista. No backtest (2018–2026, líquido de custos): supera o IBOVESPA em retorno com metade da volatilidade e um terço do drawdown máximo.
+
+### 🌫️ [Neblina](https://github.com/Leoffreitass/neblina)
+
+**Trend following com lógica fuzzy no IBOV.** A tendência tratada como questão de grau, não de interruptor: um sistema de inferência Sugeno converte tendência e volatilidade em exposição contínua (0–100%), com fatores macro (dólar e juros) descontando risco gradualmente e caixa a CDI. A ablação contra a regra dura de MM200 isola o efeito: a graduação fuzzy corta o custo do whipsaw — metade do drawdown com retorno maior. Construído em 3 ciclos de pesquisa com **8 hipóteses pré-registradas em commit** antes de cada backtest (3 aceitas, 5 rejeitadas e documentadas).
+
+## Como trabalho
+
+Backtests com composição histórica do índice (nada de carteira atual aplicada ao passado), sinais sem look-ahead, custos explícitos, comparações em amostra comum e parâmetros fixados ex-ante pela literatura — nunca otimizados olhando o resultado. Os repositórios documentam o caminho inteiro, incluindo as hipóteses rejeitadas.
+
+**Stack:** Python — pandas, NumPy, SciPy, `arch` (GARCH), scikit-fuzzy, matplotlib.
+
+📫 leonardodelfreitass@gmail.com
+
+---
+
+*Projetos de pesquisa e educação. Nada aqui constitui recomendação de investimento; resultados de backtest não garantem desempenho futuro.*

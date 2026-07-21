@@ -1,5 +1,3 @@
-# Leonardo Freitas
-
 Pesquisador quantitativo independente, focado no mercado brasileiro: estratégias sistemáticas long-only sobre o IBOVESPA, do dado bruto ao backtest. Aberto a oportunidades em pesquisa quantitativa e gestão de risco.
 
 ## Projetos
@@ -11,10 +9,6 @@ Pesquisador quantitativo independente, focado no mercado brasileiro: estratégia
 ### 🌫️ [Neblina](https://github.com/Leoffreitass/neblina)
 
 **Trend following com lógica fuzzy no IBOV.** A tendência tratada como questão de grau, não de interruptor: um sistema de inferência Sugeno converte tendência e volatilidade em exposição contínua (0–100%), com fatores macro (dólar e juros) descontando risco gradualmente e caixa a CDI. A ablação contra a regra dura de MM200 isola o efeito: a graduação fuzzy corta o custo do whipsaw — metade do drawdown com retorno maior. Construído em 3 ciclos de pesquisa com **8 hipóteses pré-registradas em commit** antes de cada backtest (3 aceitas, 5 rejeitadas e documentadas).
-
-## Como trabalho
-
-Backtests com composição histórica do índice (nada de carteira atual aplicada ao passado), sinais sem look-ahead, custos explícitos, comparações em amostra comum e parâmetros fixados ex-ante pela literatura — nunca otimizados olhando o resultado. Os repositórios documentam o caminho inteiro, incluindo as hipóteses rejeitadas.
 
 **Stack:** Python — pandas, NumPy, SciPy, `arch` (GARCH), scikit-fuzzy, matplotlib.
 
